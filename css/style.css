@@ -10,14 +10,46 @@ body {
     background-color: #ffffff;
 }
 
+ul{
+    list-style-type: none;
+}
+
+header .inner{
+    width: 1000px;
+    height: 120px;
+    margin: 0px auto;
+    position:relative;
+}
+
+header .inner h1{
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+}
+
 header {
     background-color: #ffffff;
     text-align:left;
     border-bottom: 1px solid rgb(164, 202, 218);
     padding-top: 50px;
     padding-bottom: 10px;
-    padding-left: 20%;
     font-size: 20px;
+}
+
+header .inner #gnb {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+header .inner #gnb li {
+    margin: 0 10px; 
+}
+
+header .inner #gnb li:first-child {
+    left: -20px;
 }
 
 figure {
@@ -76,6 +108,9 @@ figure {
     color : black;
 }
 
+.link-email:hover {
+    color: #020455b9
+}
 .link-button {
     font-size: 15px;
     color: #000000;
@@ -86,6 +121,7 @@ figure {
     border-radius: 4px; 
     border: 1px solid #011a2cb9;
     height: 10px; 
+    text-align: center;
 }
 
 .link-button:hover {
