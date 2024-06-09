@@ -1,4 +1,4 @@
-const host = ""http://100.27.115.89:80"";
+const host = "http://100.27.115.89:8081";
 const todosContainer = document.querySelector('.todos-container');
 
 
@@ -11,7 +11,7 @@ function getTodos() {
         .catch(error => {
             console.error('Error fetching todos:', error);
         });
-}  
+}
 
 function renderTodos(todos) {
     todosContainer.innerHTML = ''; // todosContainer 초기화
