@@ -1,6 +1,7 @@
 const host = ""http://100.27.115.89:80"";
 const todosContainer = document.querySelector('.todos-container');
 
+
 function getTodos() {
     axios.get(`${host}/todo`)
         .then(response => {
